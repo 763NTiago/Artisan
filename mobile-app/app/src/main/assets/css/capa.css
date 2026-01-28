@@ -1,0 +1,133 @@
+/* ===============================================================
+ SEÇÃO DA CAPA (CSS Fornecido por você)
+ ===============================================================
+*/
+
+.cover-page {
+    position: relative; 
+    padding: 0; 
+    height: 297mm;
+    width: 100%; 
+}
+
+/* 1. Cabeçalho (Logo) */
+.cover-header {
+    position: absolute; 
+    top: 15mm; 
+    left: 0;
+    width: 100%; 
+    text-align: center;
+    height: 45mm; 
+    z-index: 10;
+}
+.cover-header img {
+    height: 100%; 
+    max-width: 70%; 
+    width: auto;
+    filter: progid:DXImageTransform.Microsoft.Shadow(color=#000000, direction=135, strength=5);
+}
+
+/* 2. "ORÇAMENTO" Badge */
+.cover-badge-wrapper {
+    position: absolute; 
+    top: 68mm; 
+    left: 0;
+    width: 100%; 
+    z-index: 10; 
+}
+.cover-badge {
+    width: 300px; 
+    margin: 0 auto; 
+    text-align: center; 
+    padding: 14px 0; 
+    background: #8B0000; 
+    border: 2px solid #fff;
+    -moz-box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+    -webkit-box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+    box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
+    font-size: 16pt;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: white;
+}
+
+/* 3. Nome do Cliente */
+.client-name-cover {
+    position: absolute;
+    top: 95mm; 
+    left: 5%;
+    width: 90%;
+    text-align: center; 
+    font-family: Georgia, 'Times New Roman', serif;
+    font-style: italic;
+    font-size: 36pt; 
+    font-weight: bold;
+    color: #8B0000;
+    text-shadow: 2px 2px 5px rgba(255,255,255,0.8);
+    z-index: 10; 
+}
+
+/* 4. Container da Imagem - 90% da folha */
+.cover-image-container {
+    position: absolute; 
+    top: 128mm; 
+    left: 5%; 
+    width: 90%; 
+    height: 152mm;
+    z-index: 5; 
+    text-align: center;
+    line-height: 152mm;
+}
+
+/* A IMAGEM EM SI */
+.cover-main-image {
+    max-width: 100%;
+    max-height: 152mm;
+    width: auto;
+    height: auto;
+    vertical-align: middle;
+    border: 5px solid white;
+    -moz-box-shadow: 0 10px 40px rgba(0,0,0,0.5);
+    -webkit-box-shadow: 0 10px 40px rgba(0,0,0,0.5);
+    box-shadow: 0 10px 40px rgba(0,0,0,0.5);
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+}
+
+/* 5. Rodapé (Data) - 10mm DO FIM DA FOLHA */
+.cover-footer-wrapper {
+    position: absolute; 
+    bottom: 10mm; 
+    left: 0;
+    width: 100%; 
+    z-index: 10;
+}
+.cover-footer {
+    width: 150px; 
+    margin: 0 auto; 
+    text-align: center; 
+    padding: 8px 0;
+    background: #8B0000;
+    border: 2px solid #fff;
+    -moz-box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+    -webkit-box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+    box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
+    font-size: 12pt; 
+    font-weight: bold;
+    color: white;
+}
+
+/* IMPRESSÃO */
+@media print {
+    .cover-page {
+        height: 297mm;
+    }
+}

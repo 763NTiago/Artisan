@@ -1,0 +1,95 @@
+<div class="page content-page">
+    
+    <div class="section">
+        <h2 class="section-title">
+            <span class="title-icon">👤</span>
+            INFORMAÇÕES DO CLIENTE
+        </h2>
+        
+        <table class="info-table">
+            <tr>
+                <td class="info-cell" style="width: 40%;">
+                    <span class="info-label">Cliente</span>
+                    <span class="info-value">{{ cliente_nome }}</span>
+                </td>
+                <td class="info-cell" style="width: 60%;">
+                    <span class="info-label">Endereço</span>
+                    <span class="info-value">{{ cliente_endereco if cliente_endereco else '-' }}</span>
+                </td>
+            </tr>
+            
+        </table>
+    </div>
+
+    <div class="section">
+        <h2 class="section-title">
+            <span class="title-icon">📦</span>
+            ITENS DO ORÇAMENTO
+        </h2>
+        
+        <table class="items-table">
+            <thead>
+                <tr>
+                    <th class="col-ambiente">AMBIENTE</th>
+                    <th class="col-desc">DESCRIÇÃO</th>
+                    <th class="col-qtd">QTD</th>
+                    <th class="col-value">VALOR UNIT.</th>
+                    <th class="col-value">VALOR TOTAL</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for item in itens %}
+                <tr>
+                    <td>
+                        <span class="item-amb">{{ item.ambiente }}</span>
+                    </td>
+                    <td>
+                        <span class="item-desc" style="white-space: pre-wrap;">{{ item.descricao }}</span>
+                    </td>
+                    <td class="text-center">{{ item.qtd }}</td>
+                    <td class="text-right">{{ item.valor_unit }}</td>
+                    <td class="text-right">{{ item.valor_total }}</td>
+                </tr>
+                {% endfor %}
+            </tbody>
+            <tfoot>
+                <tr class="total-row">
+                    <td colspan="4" class="text-right"><strong>VALOR TOTAL</strong></td>
+                    <td class="text-right"><strong class="total-final">{{ valor_total_final }}</strong></td>
+                </tr>
+            </tfoot>
+        </table>
+    </div>
+
+    {% if observacoes %}
+    <div class="section" style="margin-top: 15px;">
+        <h2 class="section-title">
+            <span class="title-icon">📋</span>
+            OBSERVAÇÕES GERAIS
+        </h2>
+        <div class="info-box observacoes" style="white-space: pre-wrap;">{{ observacoes | safe }}</div>
+    </div>
+    {% endif %}
+
+    {% if condicoes_pagamento %}
+    <div class="section">
+        <h2 class="section-title">
+            <span class="title-icon">💳</span>
+            CONDIÇÕES DE PAGAMENTO
+        </h2>
+        <div class="info-box pagamento" style="white-space: pre-wrap;">{{ condicoes_pagamento | safe }}</div>
+    </div>
+    {% endif %}
+
+    <div class="section signature-section">
+        <div class="signature-location">
+            Praia Grande - SC, {{ data_hoje }}
+        </div>
+        
+        <div class="signature-line">
+            <span class="sig-name">Artisan MARCENARIA</span>
+            <span class="sig-doc">CNPJ: 23.814.256/0001-38</span>
+        </div>
+    </div>
+
+</div>

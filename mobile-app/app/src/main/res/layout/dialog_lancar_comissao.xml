@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <TextView
+            android:text="Lançar Nova Comissão"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="@color/colorPrimary"
+            android:layout_marginBottom="16dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView text="Arquiteto:" android:textStyle="bold" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        <Spinner
+            android:id="@+id/spinArquitetoCom"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="@drawable/ic_launcher_background"
+            android:backgroundTint="#F0F0F0"
+            android:layout_marginBottom="12dp"/>
+
+        <TextView text="Projeto (Recebimento):" android:textStyle="bold" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        <Spinner
+            android:id="@+id/spinProjetoCom"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="@drawable/ic_launcher_background"
+            android:backgroundTint="#E3F2FD"
+            android:layout_marginBottom="12dp"/>
+
+        <TextView text="Porcentagem (%):" android:textStyle="bold" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        <EditText
+            android:id="@+id/edtPorcentagemCom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal"
+            android:minHeight="48dp"
+            android:hint="0"
+            android:layout_marginBottom="12dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="8dp">
+
+            <TextView text="Valor Base:" android:textColor="#666" android:layout_weight="1" android:layout_width="0dp" android:layout_height="wrap_content"/>
+            <TextView android:id="@+id/txtValorBaseCom" text="R$ 0,00" android:textStyle="bold" android:textColor="#666" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="16dp">
+
+            <TextView text="Valor Comissão:" android:textColor="#28A745" android:textStyle="bold" android:layout_weight="1" android:layout_width="0dp" android:layout_height="wrap_content"/>
+            <TextView android:id="@+id/txtValorFinalCom" text="R$ 0,00" android:textStyle="bold" android:textColor="#28A745" android:textSize="16sp" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+        <TextView text="Data Prevista:" android:textStyle="bold" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <EditText
+                android:id="@+id/edtDataPrevistaCom"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:inputType="date"
+                android:focusable="false"
+                android:clickable="true"
+                android:minHeight="48dp"/>
+
+            <ImageButton
+                android:src="@android:drawable/ic_menu_my_calendar"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:tint="@color/colorPrimary"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:contentDescription="Calendário"/>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnSalvarComissaoDialog"
+            android:text="✔️ Salvar Lançamento"
+            android:backgroundTint="#28A745"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"/>
+
+    </LinearLayout>
+</ScrollView>

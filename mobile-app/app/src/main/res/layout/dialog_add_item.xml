@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <TextView
+            android:id="@+id/lblTituloDialog"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Adicionar Novo Item"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="#333"
+            android:layout_marginBottom="16dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="0.4"
+                android:orientation="vertical"
+                android:layout_marginEnd="8dp"
+                android:layout_height="wrap_content">
+                <TextView android:text="Qtd:" android:textSize="12sp" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                <EditText
+                    android:id="@+id/inputQuantidade"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="numberDecimal"
+                    android:text="1"
+                    android:minHeight="48dp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:layout_height="wrap_content">
+                <TextView android:text="Ambiente:" android:textSize="12sp" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                <EditText
+                    android:id="@+id/inputAmbiente"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textCapWords"
+                    android:hint="Ex: Cozinha"
+                    android:minHeight="48dp"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <TextView
+            android:text="Valor Unitário (R$):"
+            android:textSize="12sp"
+            android:layout_marginTop="12dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <EditText
+            android:id="@+id/inputValorUnit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:hint="R$ 0,00"
+            android:minHeight="48dp"/>
+
+        <TextView
+            android:text="Descrição Detalhada do Item:"
+            android:textSize="12sp"
+            android:layout_marginTop="12dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <EditText
+            android:id="@+id/inputDescricao"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textMultiLine"
+            android:minLines="4"
+            android:gravity="top"
+            android:background="@drawable/ic_launcher_background"
+            android:backgroundTint="#F0F0F0"
+            android:padding="8dp"
+            android:layout_marginTop="4dp"/>
+
+    </LinearLayout>
+</ScrollView>

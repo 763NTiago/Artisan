@@ -1,0 +1,55 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 10pt;
+    color: #1a1a1a;
+    line-height: 1.6;
+    background: #fff;
+    margin: 0;
+    padding: 0;
+}
+
+.page {
+    position: relative;
+    page-break-after: always;
+    background: white;
+    overflow: hidden;
+    padding: 0; 
+    
+    /* Altura padrão A4 -  */
+    width: 210mm;
+    margin: 0 auto;
+}
+
+.page:last-child {
+    page-break-after: auto;
+}
+
+/* IMPRESSÃO */
+@media print {
+    body {
+        margin: 0;
+        padding: 0;
+    }
+    
+    .page {
+        page-break-after: always;
+        margin: 0;
+        width: 210mm;
+    }
+    
+    .page:last-child {
+        page-break-after: auto;
+    }
+    
+    @page {
+        size: A4;
+        margin: 0;
+    }
+}
+

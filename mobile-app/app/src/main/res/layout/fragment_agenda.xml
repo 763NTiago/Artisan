@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#F5F5F5"
+    android:padding="16dp">
+
+    <TextView
+        android:text="Agenda de Projetos"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:textColor="@color/colorPrimary"
+        android:layout_marginBottom="16dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="8dp">
+
+        <Button
+            android:id="@+id/btnNovoProjeto"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="➕ Novo"
+            android:backgroundTint="#28A745"
+            android:textColor="#FFF"
+            android:layout_marginEnd="4dp"/>
+
+        <Button
+            android:id="@+id/btnEditarProjeto"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="✏️ Editar"
+            android:backgroundTint="#17A2B8"
+            android:textColor="#FFF"
+            android:layout_marginEnd="4dp"/>
+
+        <Button
+            android:id="@+id/btnRemoverProjeto"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="🗑️ Remover"
+            android:backgroundTint="#DC3545"
+            android:textColor="#FFF"/>
+    </LinearLayout>
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none"
+        android:layout_marginBottom="12dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnFiltroTodos"
+                android:text="Todos"
+                android:backgroundTint="#6C757D"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_marginEnd="4dp"/>
+
+            <Button
+                android:id="@+id/btnFiltroHoje"
+                android:text="Hoje"
+                android:backgroundTint="#6C757D"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_marginEnd="4dp"/>
+
+            <Button
+                android:id="@+id/btnFiltroSemana"
+                android:text="Esta Semana"
+                android:backgroundTint="#6C757D"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_marginEnd="4dp"/>
+
+            <Button
+                android:id="@+id/btnFiltroMes"
+                android:text="Este Mês"
+                android:backgroundTint="#6C757D"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"/>
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <TextView
+        android:id="@+id/txtAvisoSelecao"
+        android:text="Selecione um projeto na lista abaixo"
+        android:textSize="12sp"
+        android:textColor="#666"
+        android:gravity="center"
+        android:layout_marginBottom="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerAgenda"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="#FFFFFF"
+        android:elevation="2dp"/>
+
+</LinearLayout>

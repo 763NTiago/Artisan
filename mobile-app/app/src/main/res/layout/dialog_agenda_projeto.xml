@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Novo Projeto na Agenda"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="@color/colorPrimary"
+            android:layout_marginBottom="16dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Puxar de Orçamento (Opcional)"
+            android:textStyle="bold"
+            android:textSize="12sp"
+            android:textColor="#007BFF"/>
+
+        <Spinner
+            android:id="@+id/spinnerOrcamentoAgenda"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="@drawable/ic_launcher_background"
+            android:backgroundTint="#E3F2FD"
+            android:layout_marginBottom="16dp"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#DDD"
+            android:layout_marginBottom="16dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cliente (Selecione ou Digite um Novo) *"
+            android:textSize="12sp"
+            android:textColor="#666"/>
+
+        <AutoCompleteTextView
+            android:id="@+id/autoCompleteClienteAgenda"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="@drawable/ic_launcher_background"
+            android:backgroundTint="#F0F0F0"
+            android:paddingStart="12dp"
+            android:paddingEnd="12dp"
+            android:hint="Digite o nome do cliente..."
+            android:completionThreshold="1"
+            android:inputType="textCapWords"
+            android:layout_marginBottom="12dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:layout_marginEnd="8dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Data Início"
+                    android:textSize="12sp"
+                    android:textColor="#666"/>
+
+                <EditText
+                    android:id="@+id/inputDataInicio"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="DD/MM/AAAA"
+                    android:inputType="date"
+                    android:focusable="false"
+                    android:clickable="true"
+                    android:minHeight="48dp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:layout_marginStart="8dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Data Entrega"
+                    android:textSize="12sp"
+                    android:textColor="#666"/>
+
+                <EditText
+                    android:id="@+id/inputDataEntrega"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="DD/MM/AAAA"
+                    android:inputType="date"
+                    android:focusable="false"
+                    android:clickable="true"
+                    android:minHeight="48dp"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Valor do Projeto (R$)"
+            android:textSize="12sp"
+            android:textColor="#666"
+            android:layout_marginTop="12dp"/>
+
+        <EditText
+            android:id="@+id/inputValorProjeto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="R$ 0,00"
+            android:inputType="numberDecimal"
+            android:minHeight="48dp"
+            android:layout_marginBottom="8dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Item / Ambiente *"
+            android:textSize="12sp"
+            android:textColor="#666"
+            android:layout_marginTop="8dp"/>
+
+        <EditText
+            android:id="@+id/inputItemAmbiente"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Ex: Cozinha, Quarto Casal"
+            android:minHeight="48dp"
+            android:layout_marginBottom="8dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Descrição Detalhada"
+            android:textSize="12sp"
+            android:textColor="#666"/>
+
+        <EditText
+            android:id="@+id/inputDescricaoDetalhada"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Ex: Móveis em MDF Branco"
+            android:minHeight="48dp"
+            android:layout_marginBottom="12dp"/>
+
+    </LinearLayout>
+</ScrollView>

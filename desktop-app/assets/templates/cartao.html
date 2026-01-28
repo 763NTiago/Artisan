@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=1080, height=1080, initial-scale=1.0, maximum-scale=1.0">
+    <title>Cartão Desconto Bellas Artes</title>
+    <style>
+        {{ css_style }}
+    </style>
+</head>
+<body>
+    <div class="cartao">
+        {% if fundo_cartao_base64 %}
+        <img class="fundo" src="data:image/png;base64,{{ fundo_cartao_base64 }}" alt="Fundo">
+        {% endif %}
+        
+        <div class="overlay"></div>
+        
+        <div class="moldura-dourada"></div>
+        
+        <div class="conteudo-principal">
+            <h1 class="parabens">PARABÉNS!</h1>
+            <h2 class="voce-ganhou">VOCÊ GANHOU</h2>
+            
+            <div class="bloco-desconto">
+                <div class="porcentagem">{{ porcentagem }}%</div>
+                <div class="texto-desconto">DE DESCONTO</div>
+            </div>
+            
+            <div class="bloco-oferta">
+                <p class="texto-projeto">NO SEU PRÓXIMO AMBIENTE NA</p>
+                <p class="nome-empresa">BELLAS ARTES</p>
+            </div>
+        </div>
+        
+        <div class="info-rodape">
+            <p class="para-cliente">{{ nome_cliente }}</p>
+            <p class="presente">(Válido também como Cartão Presente)</p>
+            
+        </div>
+        <p class="apresentacao">Apresente este cartão para validar o desconto</p>
+        
+        {% if qrcode_insta_base64 %}
+        <div class="qrcode-insta">
+            <img src="data:image/png;base64,{{ qrcode_insta_base64 }}" alt="Instagram">
+        </div>
+        {% endif %}
+        
+        {% if whatsapp_icon_base64 %}
+        <div class="whatsapp-contato">
+            <div class="wa-linha"> 
+                <img src="data:image/png;base64,{{ whatsapp_icon_base64 }}" alt="WhatsApp">
+                <p>(48) 9 9173-0857</p>
+            </div>
+        </div>
+        {% endif %}
+        
+        <p class="validade">*DESCONTO VÁLIDO ATÉ <span class="data">{{ data_validade }}</span></p>
+    </div>
+</body>
+</html>

@@ -1,0 +1,8 @@
+{
+    "db_path": "data/artisan.db",
+    "theme_mode": "System",
+    "app_title": "Artisan Manager",
+    "assets_path": "assets/",
+    "export_path": "exports/",
+    "custom_background_path": ""
+}

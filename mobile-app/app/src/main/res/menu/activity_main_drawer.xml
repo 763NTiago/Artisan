@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@android:drawable/ic_menu_view"
+            android:title="Home" />
+
+        <item
+            android:id="@+id/nav_orcamentos"
+            android:icon="@android:drawable/ic_menu_edit"
+            android:title="Orçamentos" />
+
+        <item
+            android:id="@+id/nav_agenda"
+            android:icon="@android:drawable/ic_menu_today"
+            android:title="Agenda / Projetos" />
+
+        <item
+            android:id="@+id/nav_recebimentos"
+            android:icon="@android:drawable/ic_menu_save"
+            android:title="Recebimentos" />
+
+        <item
+            android:id="@+id/nav_comissoes"
+            android:icon="@android:drawable/ic_menu_share"
+            android:title="Comissões" />
+
+        <item
+            android:id="@+id/nav_cartao_desconto"
+            android:icon="@android:drawable/star_on"
+            android:title="Cartão Desconto" />
+
+        <item
+            android:id="@+id/nav_relatorios"
+            android:icon="@android:drawable/ic_menu_sort_by_size"
+            android:title="Relatórios" />
+
+        <item
+            android:id="@+id/nav_perfil"
+            android:icon="@android:drawable/ic_menu_my_calendar"
+            android:title="Meu Perfil" />
+
+    </group>
+</menu>

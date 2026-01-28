@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#F5F5F5"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="12dp">
+
+        <Button
+            android:id="@+id/btnAdicionarItem"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="✔️ ADICIONAR"
+            android:backgroundTint="#28A745"
+            android:textColor="#FFF"
+            android:textSize="12sp"
+            android:layout_marginEnd="4dp"/>
+
+        <Button
+            android:id="@+id/btnEditarItem"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="✏️ EDITAR"
+            android:backgroundTint="#FFC107"
+            android:textColor="#000"
+            android:textSize="12sp"
+            android:layout_marginEnd="4dp"/>
+
+        <Button
+            android:id="@+id/btnRemoverItem"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="✖️ REMOVER"
+            android:backgroundTint="#DC3545"
+            android:textColor="#FFF"
+            android:textSize="12sp"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/txtAvisoSelecao"
+        android:text="Toque em um item na lista para selecionar"
+        android:textSize="12sp"
+        android:textColor="#666"
+        android:gravity="center"
+        android:layout_marginBottom="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#007BFF"
+        android:padding="8dp">
+
+        <TextView android:text="Qtd" android:textColor="#FFF" android:textStyle="bold" android:layout_width="0dp" android:layout_weight="0.5" android:layout_height="wrap_content"/>
+        <TextView android:text="Ambiente" android:textColor="#FFF" android:textStyle="bold" android:layout_width="0dp" android:layout_weight="1.2" android:layout_height="wrap_content"/>
+        <TextView android:text="Descrição" android:textColor="#FFF" android:textStyle="bold" android:layout_width="0dp" android:layout_weight="2" android:layout_height="wrap_content"/>
+        <TextView android:text="Total" android:textColor="#FFF" android:textStyle="bold" android:gravity="end" android:layout_width="0dp" android:layout_weight="1" android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerItensTab"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="#FFFFFF"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="end"
+        android:paddingTop="12dp">
+
+        <TextView
+            android:id="@+id/txtTotalOrcamento"
+            android:text="TOTAL ORÇAMENTO: R$ 0,00"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="#28A745"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+</LinearLayout>

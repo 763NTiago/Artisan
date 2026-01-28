@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="12dp"
+    android:background="@drawable/ic_launcher_background"
+    android:backgroundTint="#FFFFFF"
+    android:layout_marginBottom="1dp">
+
+    <TextView
+        android:id="@+id/txtIdHist"
+        android:text="1"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_width="40dp"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/txtDataHist"
+        android:text="01/01/2025"
+        android:layout_width="90dp"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/txtClienteHist"
+        android:text="Nome do Cliente"
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/txtValorHist"
+        android:text="R$ 1.500,00"
+        android:textStyle="bold"
+        android:textColor="#28A745"
+        android:gravity="end"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"/>
+
+</LinearLayout>

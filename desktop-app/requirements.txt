@@ -1,0 +1,7 @@
+customtkinter
+packaging
+pillow
+requests
+tkcalendar
+reportlab
+babel

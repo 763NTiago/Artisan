@@ -1,0 +1,328 @@
+/* CARTÃO DESCONTO Artisan - SIMPLES E ELEGANTE */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    width: 1080px;
+    height: 1080px;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    border: none;
+    outline: none;
+}
+
+body {
+    font-family: 'Arial Black', Arial, sans-serif;
+    background: transparent;
+    display: block;
+}
+
+/* FUNDO */
+.cartao {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 1080px;
+    height: 1080px;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background: radial-gradient(circle at center, #4a2c2c 0%, #3d1f1f 60%, #2a1515 100%);
+}
+
+.fundo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 1080px;
+    height: 1080px;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+    opacity: 1;
+    z-index: 0;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 1080px;
+    height: 1080px;
+    background: radial-gradient(ellipse at center, transparent 0%, rgba(0, 0, 0, 0.25) 100%);
+    z-index: 1;
+}
+
+/* MOLDURA - COR DO LOGO */
+.moldura-dourada {
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    width: 1020px;
+    height: 1020px;
+    border: 7px solid #C97B6B;
+    z-index: 5;
+    background: transparent;
+    box-shadow: 0 0 30px rgba(201, 123, 107, 0.6);
+}
+
+.moldura-dourada::before {
+    content: '';
+    position: absolute;
+    top: 12px;
+    left: 12px;
+    right: 12px;
+    bottom: 12px;
+    border: 2px solid rgba(201, 123, 107, 0.4);
+}
+
+.conteudo-principal {
+    position: absolute;
+    top: 75px;
+    left: 0;
+    width: 1080px;
+    height: 740px;
+    z-index: 10;
+    text-align: center;
+    padding: 0 60px;
+}
+
+/* PARABÉNS - SIMPLES E BONITO */
+.parabens {
+    font-size: 95px;
+    font-weight: 900;
+    color: #D88A7A;
+    text-transform: uppercase;
+    letter-spacing: 12px;
+    margin-bottom: 10px;
+    text-shadow: 
+        3px 3px 0 #8D3F2F,
+        5px 5px 15px rgba(0, 0, 0, 0.8),
+        0 0 25px rgba(216, 138, 122, 0.5);
+}
+
+/* VOCÊ GANHOU */
+.voce-ganhou {
+    font-size: 54px;
+    font-weight: 900;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    letter-spacing: 8px;
+    margin-bottom: 45px;
+    text-shadow: 
+        3px 3px 0 #000000,
+        5px 5px 15px rgba(0, 0, 0, 0.8);
+}
+
+/* BLOCO DESCONTO */
+.bloco-desconto {
+    background: linear-gradient(135deg, 
+        rgba(139, 76, 76, 0.35) 0%, 
+        rgba(90, 44, 44, 0.45) 100%);
+    border: 6px solid #D88A7A;
+    border-radius: 30px;
+    padding: 40px 85px;
+    margin-bottom: 50px;
+    box-shadow: 
+        0 0 30px rgba(216, 138, 122, 0.4),
+        0 10px 35px rgba(0, 0, 0, 0.8);
+}
+
+/* PORCENTAGEM - IMPACTANTE MAS LIMPO */
+.porcentagem {
+    font-size: 195px;
+    font-weight: 900;
+    color: #FFFFFF;
+    line-height: 0.9;
+    letter-spacing: -8px;
+    text-shadow: 
+        4px 4px 0 #D88A7A,
+        7px 7px 0 #8D3F2F,
+        10px 10px 25px rgba(0, 0, 0, 0.9),
+        0 0 30px rgba(216, 138, 122, 0.4);
+}
+
+/* TEXTO DESCONTO */
+.texto-desconto {
+    font-size: 48px;
+    font-weight: 900;
+    color: #D88A7A;
+    text-transform: uppercase;
+    margin-top: 8px;
+    letter-spacing: 10px;
+    text-shadow: 
+        3px 3px 0 #000000,
+        5px 5px 12px rgba(0, 0, 0, 0.8);
+}
+
+.bloco-oferta {
+    margin-bottom: 40px;
+}
+
+/* NO SEU PRÓXIMO PROJETO NA */
+.texto-projeto {
+    font-size: 31px;
+    font-weight: 900;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    margin-bottom: 12px;
+    letter-spacing: 4px;
+    text-shadow: 
+        3px 3px 0 #000000,
+        4px 4px 12px rgba(0, 0, 0, 0.8);
+}
+
+/* Artisan - DESTAQUE COM COR DO LOGO */
+.nome-empresa {
+    font-size: 72px;
+    font-weight: 900;
+    color: #D88A7A;
+    text-transform: uppercase;
+    letter-spacing: 10px;
+    text-shadow: 
+        4px 4px 0 #8D3F2F,
+        7px 7px 20px rgba(0, 0, 0, 0.9),
+        0 0 30px rgba(216, 138, 122, 0.5);
+}
+
+/* INFO RODAPÉ */
+.info-rodape {
+    position: absolute;
+    bottom: 85px;
+    left: 350px;
+    z-index: 10;
+    width: 520px;
+    text-align: center;
+}
+
+.para-cliente {
+    font-family: 'Arial Black', Arial, sans-serif;
+    font-size: 34px;
+    font-weight: 900;
+    color: #FFFFFF;
+    white-space: nowrap;
+    text-shadow: 
+        3px 3px 0 #000000,
+        4px 4px 12px rgba(0, 0, 0, 0.8);
+    margin-bottom: 8px;
+}
+
+.presente {
+    font-family: 'Arial', sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+    color: #e0e0e0;
+    white-space: nowrap;
+    text-shadow: 
+        2px 2px 0 #000000,
+        3px 3px 8px rgba(0, 0, 0, 0.8);
+}
+
+/* APRESENTAÇÃO - TEXTO SUTIL NO RODAPÉ INFERIOR */
+.apresentacao {
+    position: absolute;
+    bottom: 50px;
+    left: 40%;
+    transform: translateX(-50%);
+    z-index: 10;
+    font-family: 'Arial', sans-serif;
+    font-size: 20px;
+    font-weight: normal;
+    font-style: italic;
+    color: #D88A7A;
+    white-space: nowrap;
+    text-shadow: 
+        1px 1px 0 #000000,
+        2px 2px 6px rgba(0, 0, 0, 0.7);
+    opacity: 0.9;
+}
+
+/* VALIDADE */
+.validade {
+    position: absolute;
+    top: 15px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 10;
+    font-size: 24px;
+    font-weight: bold;
+    color: #FFFFFF;
+    text-shadow: 
+        2px 2px 0 #000000,
+        4px 4px 10px rgba(0, 0, 0, 0.8);
+}
+
+.validade .data {
+    color: #D88A7A;
+    font-weight: 900;
+    font-size: 28px;
+    text-shadow: 
+        2px 2px 0 #000000,
+        4px 4px 10px rgba(0, 0, 0, 0.8);
+}
+
+/* QR CODE */
+.qrcode-insta {
+    position: absolute;
+    bottom: 40px;
+    right: 40px;
+    width: 145px;
+    height: 145px;
+    z-index: 10;
+}
+
+.qrcode-insta img {
+    width: 145px;
+    height: 145px;
+    display: block;
+    background: #FFFFFF;
+    padding: 11px;
+    border: 5px solid #C97B6B;
+    border-radius: 14px;
+    box-shadow: 
+        0 0 20px rgba(201, 123, 107, 0.6),
+        0 8px 25px rgba(0, 0, 0, 0.8);
+}
+
+/* WHATSAPP */
+.whatsapp-contato {
+    position: absolute;
+    bottom: 40px;
+    left: 40px;
+    z-index: 10;
+    text-align: left;
+}
+
+.wa-linha {
+    margin-bottom: 12px;
+    text-align: left;
+}
+
+.whatsapp-contato img {
+    width: 50px;
+    height: 50px;
+    display: inline-block;
+    vertical-align: middle;
+    filter: drop-shadow(0 0 12px rgba(37, 211, 102, 0.7))
+            drop-shadow(0 5px 15px rgba(0, 0, 0, 0.9));
+}
+
+.whatsapp-contato p {
+    font-family: 'Arial', sans-serif;
+    font-size: 28px;
+    font-weight: bold;
+    color: #FFFFFF;
+    line-height: 1;
+    margin: 0;
+    text-shadow: 
+        2px 2px 0 #000000,
+        3px 3px 10px rgba(0, 0, 0, 0.9);
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 15px;
+}

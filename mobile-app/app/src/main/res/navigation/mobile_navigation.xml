@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.sttalis.artisan.ui.HomeFragment"
+        android:label="Home"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/nav_orcamentos"
+        android:name="com.sttalis.artisan.ui.orcamento.OrcamentoFragment"
+        android:label="Orçamentos"
+        tools:layout="@layout/fragment_orcamentos" />
+
+    <fragment
+        android:id="@+id/nav_criar_orcamento"
+        android:name="com.sttalis.artisan.ui.orcamento.CriarOrcamentoFragment"
+        android:label="Novo Orçamento"
+        tools:layout="@layout/fragment_criar_orcamento" />
+
+    <fragment
+        android:id="@+id/nav_cartao_desconto"
+        android:name="com.sttalis.artisan.ui.cartao.CartaoDescontoFragment"
+        android:label="Cartão Desconto"
+        tools:layout="@layout/fragment_cartao_desconto" />
+
+    <fragment
+        android:id="@+id/nav_agenda"
+        android:name="com.sttalis.artisan.ui.agenda.AgendaFragment"
+        android:label="Agenda / Projetos"
+        tools:layout="@layout/fragment_agenda" />
+
+    <fragment
+        android:id="@+id/nav_recebimentos"
+        android:name="com.sttalis.artisan.ui.recebimentos.RecebimentosFragment"
+        android:label="Recebimentos"
+        tools:layout="@layout/fragment_recebimentos" />
+
+    <fragment
+        android:id="@+id/nav_comissoes"
+        android:name="com.sttalis.artisan.ui.comissao.ComissoesFragment"
+        android:label="Comissão"
+        tools:layout="@layout/fragment_comissoes" />
+
+    <fragment
+        android:id="@+id/nav_relatorios"
+        android:name="com.sttalis.artisan.ui.relatorios.RelatoriosFragment"
+        android:label="Relatórios"
+        tools:layout="@layout/fragment_relatorios" />
+
+    <fragment
+        android:id="@+id/nav_clientes"
+        android:name="com.sttalis.artisan.ui.ClientesFragment"
+        android:label="Clientes"
+        tools:layout="@layout/fragment_clientes" />
+
+    <fragment
+        android:id="@+id/nav_perfil"
+        android:name="com.sttalis.artisan.ui.PerfilFragment"
+        android:label="Meu Perfil"
+        tools:layout="@layout/fragment_perfil" />
+
+</navigation>

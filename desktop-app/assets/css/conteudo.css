@@ -1,0 +1,238 @@
+.content-page,
+.details-page {
+    padding: 5mm; 
+}
+
+.section {
+    margin-bottom: 12px;
+    page-break-inside: avoid; 
+    position: relative;
+    z-index: 1;
+}
+
+.section-title {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 11pt;
+    font-weight: 900;
+    color: #8B0000;
+    text-transform: uppercase;
+    letter-spacing: 1.2px;
+    padding: 8px 0;
+    border-bottom: 3px solid #8B0000;
+    margin-bottom: 10px;
+}
+
+.title-icon { font-size: 14pt; }
+
+.info-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 8.5pt;
+    line-height: 1.5;
+    color: #333;
+    border: 1px solid #e0e0e0;
+}
+
+.info-cell {
+    border: 1px solid #e0e0e0;
+    padding: 8px 10px;
+    vertical-align: top;
+}
+
+.info-label {
+    display: block;
+    font-size: 7.5pt;
+    font-weight: 700;
+    color: #555;
+    text-transform: uppercase;
+    margin-bottom: 3px;
+}
+
+.info-value {
+    display: block;
+    font-weight: 600;
+    font-size: 9pt;
+    color: #000;
+}
+
+.items-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 9pt;
+    color: #2c2c2c;
+    margin-top: 5px;
+}
+
+.items-table th,
+.items-table td {
+    border: 1px solid #e0e0e0;
+    padding: 6px 8px;
+    text-align: left;
+    vertical-align: top;
+}
+
+.items-table thead th {
+    background: #f4f4f4;
+    font-size: 8pt;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #333;
+    padding: 8px 8px;
+}
+
+.items-table .col-ambiente { width: 20%; }
+.items-table .col-desc { width: 48%; }
+.items-table .col-qtd { width: 7%; }
+.items-table .col-value { width: 12.5%; }
+
+.item-name {
+    font-weight: 700;
+    color: #000;
+    display: block;
+}
+.item-desc {
+    font-size: 8.5pt;
+    color: #333;
+    line-height: 1.5;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+}
+.qty-badge {
+    display: inline-block;
+    padding: 4px 6px;
+    background: #e0e0e0;
+    border-radius: 4px;
+    font-weight: 700;
+    font-size: 8.5pt;
+}
+.text-center { text-align: center; vertical-align: middle; }
+.text-right { text-align: right; vertical-align: middle; font-weight: 600; }
+.valor-total { font-weight: 700; color: #8B0000; }
+
+.items-table tfoot .total-row {
+    background: #f0f0f0;
+    border-top: 3px solid #8B0000;
+}
+
+.items-table tfoot td {
+    padding: 10px 8px;
+    font-size: 10pt;
+    font-weight: 700;
+    border: none;
+}
+
+.total-final { font-size: 12pt; color: #8B0000; }
+
+.info-box {
+    background: white;
+    border: 2px solid #e0e0e0;
+    padding: 12px 15px;
+    font-size: 8.5pt;
+    line-height: 1.6;
+    color: #2c2c2c;
+    page-break-inside: avoid; 
+    margin-bottom: 10px;
+}
+
+.info-box.observacoes { border-left: 5px solid #ff9800; }
+.info-box.pagamento { border-left: 5px solid #4caf50; }
+
+.signature-section { margin-top: 25px; page-break-inside: avoid; }
+.signature-text { text-align: center; font-size: 9pt; font-style: italic; color: #333; margin-bottom: 30px; }
+.signature-location { text-align: center; font-size: 9pt; font-weight: 600; color: #000; margin-top: 30px; }
+
+.signature-grid {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    gap: 50px;
+    padding: 0 20px;
+}
+.signature-box {
+    -webkit-box-flex: 1;
+    -ms-flex: 1 1 45%;
+    flex: 1 1 45%;
+    max-width: 45%;
+    text-align: center;
+    font-size: 8.5pt;
+}
+.signature-line {
+    border-bottom: 1px solid #000;
+    margin-bottom: 8px;
+    position: relative;
+}
+.sig-name { font-weight: 700; font-size: 9pt; }
+.sig-role { color: #555; text-transform: uppercase; font-size: 8pt; }
+.sig-doc { color: #333; font-weight: 600; }
+
+
+.descricao-tabela {
+    font-size: 9pt;
+    font-style: italic;
+    margin-bottom: 8px;
+    color: #333;
+}
+.tabela-materiais {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 5px;
+    font-size: 8.5pt;
+    page-break-inside: avoid;
+}
+.tabela-materiais th,
+.tabela-materiais td {
+    border: 1px solid #ccc;
+    padding: 6px 8px;
+    text-align: left;
+}
+.tabela-materiais th {
+    background-color: #f4f4f4;
+    font-size: 9pt;
+    font-weight: 700;
+    color: #333;
+}
+.tabela-materiais tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+
+.signature-section {
+    margin-top: 50px;          
+    page-break-inside: avoid;   
+    text-align: center;         
+}
+
+.signature-location { 
+    text-align: center; 
+    font-size: 10pt; 
+    font-weight: 600; 
+    color: #000; 
+    margin-bottom: 40px;        
+}
+
+.signature-line {
+    width: 60%;                 
+    margin: 0 auto;             
+    border-top: 1px solid #000; 
+    text-align: center;         
+    padding-top: 10px;         
+}
+
+.sig-name { 
+    font-weight: 700; 
+    font-size: 10pt; 
+    display: block;             
+    margin-bottom: 2px;
+}
+
+.sig-doc { 
+    color: #333; 
+    font-weight: 600; 
+    font-size: 9pt; 
+    display: block;
+}

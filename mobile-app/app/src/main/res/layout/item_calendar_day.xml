@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="45dp"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@drawable/ic_launcher_background"
+    android:backgroundTint="@android:color/transparent"
+    android:layout_margin="1dp">
+
+    <TextView
+        android:id="@+id/txtDiaNumero"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:text="1"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textSize="14sp"
+        android:textColor="#333333"
+        android:background="@drawable/bg_calendar_circle"/>
+
+    <ImageView
+        android:id="@+id/imgIndicador"
+        android:layout_width="6dp"
+        android:layout_height="6dp"
+        android:src="@drawable/ic_launcher_background"
+        android:backgroundTint="#FF0000"
+        android:visibility="gone"
+        android:layout_marginTop="2dp"/>
+
+</LinearLayout>

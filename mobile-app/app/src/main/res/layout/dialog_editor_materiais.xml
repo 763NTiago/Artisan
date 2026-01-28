@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:text="Editor de Materiais Inclusos"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="#333"
+            android:layout_marginBottom="16dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView android:text="Material:" android:textSize="12sp" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        <Spinner
+            android:id="@+id/spinMaterialDialog"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="@drawable/ic_launcher_background"
+            android:backgroundTint="#F0F0F0"
+            android:layout_marginBottom="8dp"/>
+
+        <TextView android:text="Descrição:" android:textSize="12sp" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        <EditText
+            android:id="@+id/edtDescMaterialDialog"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="48dp"
+            android:inputType="textCapSentences"
+            android:layout_marginBottom="8dp"/>
+
+        <Button
+            android:id="@+id/btnAddListaDialog"
+            android:text="Adicionar à Lista ⬇️"
+            android:backgroundTint="#17A2B8"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:text="Itens para Inserir:"
+            android:textStyle="bold"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="4dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerMateriaisDialog"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:background="#F9F9F9"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="16dp">
+
+            <Button
+                android:id="@+id/btnRemoverDialog"
+                android:text="Remover Sel."
+                android:backgroundTint="#DC3545"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="4dp"/>
+
+            <Button
+                android:id="@+id/btnConfirmarDialog"
+                android:text="✔️ Confirmar"
+                android:backgroundTint="#28A745"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="4dp"/>
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>

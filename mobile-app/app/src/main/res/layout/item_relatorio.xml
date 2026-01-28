@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:paddingVertical="6dp"
+    android:background="@android:color/white">
+
+    <TextView
+        android:id="@+id/colDataIni"
+        android:layout_width="90dp"
+        android:layout_height="wrap_content"
+        tools:text="12/01/2026"
+        android:textSize="12sp"
+        android:gravity="center"
+        android:textColor="#333"/>
+
+    <TextView
+        android:id="@+id/colDataFim"
+        android:layout_width="90dp"
+        android:layout_height="wrap_content"
+        tools:text="19/02/2026"
+        android:textSize="12sp"
+        android:gravity="center"
+        android:textColor="#333"/>
+
+    <TextView
+        android:id="@+id/colCliente"
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        tools:text="Cliente Exemplo"
+        android:textSize="12sp"
+        android:paddingStart="8dp"
+        android:textStyle="bold"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:textColor="#000"/>
+
+    <TextView
+        android:id="@+id/colProjeto"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        tools:text="Descrição Projeto"
+        android:textSize="12sp"
+        android:paddingStart="8dp"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:textColor="#333"/>
+
+    <TextView
+        android:id="@+id/colArquiteto"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        tools:text="Arquiteto"
+        android:textSize="12sp"
+        android:paddingStart="8dp"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:textColor="#555"/>
+
+    <TextView
+        android:id="@+id/colTotal"
+        android:layout_width="110dp"
+        android:layout_height="wrap_content"
+        tools:text="R$ 0,00"
+        android:textSize="12sp"
+        android:gravity="end"
+        android:paddingEnd="8dp"
+        android:textColor="#000"/>
+
+    <TextView
+        android:id="@+id/colComissao"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        tools:text="R$ 0,00"
+        android:textSize="12sp"
+        android:gravity="end"
+        android:paddingEnd="8dp"
+        android:textColor="#D32F2F"/>
+
+    <TextView
+        android:id="@+id/colRecebido"
+        android:layout_width="110dp"
+        android:layout_height="wrap_content"
+        tools:text="R$ 0,00"
+        android:textSize="12sp"
+        android:gravity="end"
+        android:paddingEnd="8dp"
+        android:textColor="#28A745"/>
+
+    <TextView
+        android:id="@+id/colPendente"
+        android:layout_width="110dp"
+        android:layout_height="wrap_content"
+        tools:text="R$ 0,00"
+        android:textSize="12sp"
+        android:gravity="end"
+        android:paddingEnd="8dp"
+        android:textColor="#FF9800"/>
+
+    <TextView
+        android:id="@+id/colLucro"
+        android:layout_width="110dp"
+        android:layout_height="wrap_content"
+        tools:text="R$ 0,00"
+        android:textSize="12sp"
+        android:gravity="end"
+        android:paddingEnd="8dp"
+        android:textStyle="bold"
+        android:textColor="#007BFF"/>
+
+</LinearLayout>

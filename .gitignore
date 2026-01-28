@@ -1,0 +1,42 @@
+# --- GERAL DO SISTEMA ---
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.log
+
+# --- ANDROID (Mobile) ---
+mobile-app/.gradle/
+mobile-app/build/
+mobile-app/local.properties
+mobile-app/*.iml
+mobile-app/.idea/
+mobile-app/app/build/
+mobile-app/captures/
+mobile-app/*.apk
+mobile-app/*.jks
+mobile-app/fastlane/
+
+# --- PYTHON GERAL (Desktop & Backend) ---
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+.env
+
+# --- DESKTOP APP (Específico) ---
+desktop-app/build/
+desktop-app/dist/
+desktop-app/*.spec
+desktop-app/config.json
+# Ignora a pasta inteira do wkhtmltopdf (binários pesados)
+desktop-app/vendor/wkhtmltopdf/
+
+# --- BACKEND API (Django) ---
+backend-api/db.sqlite3
+backend-api/media/
+backend-api/staticfiles/
+backend-api/data/config.json
